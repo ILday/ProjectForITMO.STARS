@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             tools:context=".Profile"
+android:background="@color/colorLightSpace">
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimaryDark"
+            android:elevation="4dp"
+            app:contentInsetStart="0dp" tools:ignore="MissingConstraints">
+        <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:text="EDIT PROFILE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="28sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginStart="8dp" android:textStyle="italic" android:textAllCaps="true"
+                    android:layout_marginTop="8dp" android:layout_marginBottom="8dp">
+
+            </TextView>
+            <ImageView
+                    android:id="@+id/data_button_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="8dp"
+
+                    android:padding="8dp"
+
+
+                    android:elevation="2dp"
+                    android:src="@drawable/ic_data" app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"/>
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.Toolbar>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/username_edittext_edit"
+            android:paddingLeft="16dp"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginStart="32dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="32dp"
+            android:hint="Username" app:layout_constraintTop_toBottomOf="@+id/select_photo_button_edit"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/email_editText_edit"
+            android:paddingLeft="16dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Email"
+            app:layout_constraintStart_toStartOf="@+id/username_edittext_edit" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/username_edittext_edit" app:layout_constraintEnd_toEndOf="@+id/username_edittext_edit"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/password_editText_edit"
+            android:paddingLeft="16dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Password"
+            app:layout_constraintStart_toStartOf="@+id/phone_number_editText_edit"
+            app:layout_constraintEnd_toEndOf="@+id/phone_number_editText_edit"
+            app:layout_constraintHorizontal_bias="0.0" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/phone_number_editText_edit"/>
+    <Button
+            android:text="EDIT PROFILE"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_button_edit"
+            android:background="@drawable/rounded_button"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/password_editText_edit"
+            app:layout_constraintStart_toStartOf="@+id/password_editText_edit"
+            app:layout_constraintEnd_toEndOf="@+id/password_editText_edit"/>
+    <Button
+            android:text="Select Photo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/select_photo_button_edit" android:layout_marginTop="32dp"
+            android:background="@drawable/rounded_select_photo_button"
+            android:textColor="@android:color/white"
+            app:layout_constraintTop_toBottomOf="@id/toolbar"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:civ_border_width="4dp"
+            app:layout_constraintTop_toTopOf="@+id/select_photo_button_edit"
+            app:layout_constraintStart_toStartOf="@+id/select_photo_button_edit"
+            app:layout_constraintEnd_toEndOf="@+id/select_photo_button_edit"
+            app:layout_constraintBottom_toBottomOf="@+id/select_photo_button_edit" android:id="@+id/selectphoto_imageview_edit"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:inputType="phone"
+            android:ems="10"
+            android:paddingLeft="16dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Phone number"
+            android:id="@+id/phone_number_editText_edit"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/email_editText_edit"
+            app:layout_constraintStart_toStartOf="@+id/email_editText_edit"
+            app:layout_constraintEnd_toEndOf="@+id/email_editText_edit"/>
+    <include layout="@layout/bottom_navigation_view"/>
+
+</android.support.constraint.ConstraintLayout>

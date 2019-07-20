@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:background="@color/colorSpace">
+
+    <TextView
+            android:text="Talk of this project"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4" android:textSize="30sp"
+            android:textColor="@android:color/white" android:textStyle="bold"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <Button
+            android:text="Watch"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/watch_chat_button"
+            android:background="@drawable/rounded_select_photo_button"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/textView4"/>
+
+    <TextView
+            android:text="Documents of this project"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5" android:textSize="30sp"
+            android:textColor="@android:color/white" android:textStyle="bold"
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/watch_chat_button"
+            android:layout_marginTop="32dp"/>
+
+    <Button
+            android:text="List of documents"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/list_documets_button"
+            android:background="@drawable/rounded_button"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="16dp"/>
+    <Button
+            android:text="Add document"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_document_button"
+            android:background="@drawable/rounded_button"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/list_documets_button" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent"/>
+</android.support.constraint.ConstraintLayout>

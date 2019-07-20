@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.mymessenger">
+
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity android:name=".messages.ChatLogActivity">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".messages.LatestMessageActivity"/>
+        </activity>
+        <activity android:name=".messages.NewMessageActivity">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".messages.LatestMessageActivity"/>
+        </activity>
+        <activity android:name=".Profile">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".messages.LatestMessageActivity"/>
+        </activity>
+        <activity android:name=".messages.LatestMessageActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".registerlogin.RegisterActivity"
+        android:windowSoftInputMode="stateVisible|adjustResize">
+        </activity>
+        <activity android:name=".registerlogin.LoginActivity">
+        </activity>
+        <activity android:name=".AdminEdit">
+        </activity>
+        <activity android:name=".ListUserEdit">
+        </activity>
+        <activity android:name=".EditUserAdmin">
+        </activity>
+        <activity android:name=".ListDepartmentEdit">
+        </activity>
+        <activity android:name=".EditDepartmentAdmin">
+        </activity>
+        <activity android:name=".ListProjectEdit">
+        </activity>
+        <activity android:name=".ListProjects">
+        </activity>
+        <activity android:name=".EditProjectAdmin">
+        </activity>
+        <activity android:name=".ListUsersProject">
+        </activity>
+        <activity android:name=".WatchProject">
+        </activity>
+        <activity android:name=".ChatProject">
+        </activity>
+        <activity android:name=".ProjectAddDocument">
+        </activity>
+        <activity android:name=".DocumentsProject">
+        </activity>
+    </application>
+
+</manifest>
